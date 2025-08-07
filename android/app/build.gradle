@@ -22,7 +22,6 @@ def flutterVersionName = localProperties.getProperty("flutter.versionName")
 if (flutterVersionName == null) {
     flutterVersionName = "1.0"
 }
-apply plugin: 'com.android.application'
 android {
     namespace = "com.amirali.coinpaz"
     compileSdkVersion 34
