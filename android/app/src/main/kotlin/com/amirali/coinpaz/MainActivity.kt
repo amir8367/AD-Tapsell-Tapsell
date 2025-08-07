@@ -1,5 +1,7 @@
-package com.amirali.coinpaz\
+
+package com.amirali.coinpaz
 
 import io.flutter.embedding.android.FlutterActivity
 
-class MainActivity: FlutterActivity()
+class MainActivity: FlutterActivity() {
+}
