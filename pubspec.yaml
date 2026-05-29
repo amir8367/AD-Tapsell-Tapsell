@@ -12,7 +12,7 @@ dependencies:
   
   # پکیج‌های اصلاح شده (دقیقاً ۲ اسپیس از اول خط فاصله دارند)
   camera: ^0.10.5+5
-  liquid_glass_renderer: ^0.2.0-dev.
+  liquid_glass_renderer: ^0.2.0-dev.4
   flutter_animate: ^4.0.0
   google_fonts: ^6.2.1
   fluttertoast: ^8.2.1
