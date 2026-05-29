@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'package:liquid_glass_render/liquid_glass_render.dart';
+import 'package:liquid_glass_renderer/liquid_glass_renderer.dart';
 
 // متغیر سراسری برای ذخیره لیست دوربین‌های در دسترس
 late List<CameraDescription> _cameras;
@@ -86,27 +86,21 @@ class _CameraScreenState extends State<CameraScreen> {
 
     return Scaffold(
       body: Stack(
-        children: [
-          // ۱. لایه پس‌زمینه: نمایش زنده دوربین به صورت تمام‌صفحه
-          Positioned.fill(
-            child: CameraPreview(controller),
-          ),
-          
-          // ۲. لایه رویی: دایره افکت Liquid Glass در مرکز صفحه
-          Center(
-            child: LiquidGlassContainer(
-              width: 250,
-              height: 250,
-              blur: 20.0,            // میزان محو شدگی پس‌زمینه شیشه
-              thickness: 1.5,        // ضخامت لبه‌های مایع شیشه
-              refraction: 0.4,       // میزان شکست نور مایع
-              glassColor: Colors.white.withOpacity(0.1), // رنگ پایه شیشه
-              shape: BoxShape.circle, // تغییر شکل کامپوننت به دایره
-              child: const SizedBox.expand(), // فضای داخلی دایره
-            ),
-          ),
-        ],
+  children: [
+    // 1. Your background content goes here
+  
+
+    // 2. Create a layer for liquid glass effects
+    LiquidGlassLayer(
+      // 3. Add your LiquidGlass widgets here
+      child: LiquidGlass(
+        shape: LiquidRoundedSuperellipse(borderRadius: 30),
+        child: const SizedBox.square(dimension: 100),
       ),
+    ),
+  ],
+)
+        
     );
   }
 }
