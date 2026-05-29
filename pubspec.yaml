@@ -1,33 +1,40 @@
-name: pal
+Name: pal
 description: "A new Flutter project."
 publish_to: 'none'
 version: 1.0.0+1
+
 environment:
   sdk: ">=3.0.0 <4.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
-    camera: ^0.10.5+5
   
-  # پکیج افکت شیشه مایع (طبق درخواست شما)
+  # پکیج‌های اصلاح شده (دقیقاً ۲ اسپیس از اول خط فاصله دارند)
+  camera: ^0.10.5+5
   liquid_glass_render: ^1.0.0
   flutter_animate: ^4.0.0
-  #process_run: ^0.12.2
-  #vector_math: ^2.1.4
   google_fonts: ^6.2.1
   fluttertoast: ^8.2.1
+  tapsell_plus: ^2.3.2
+  cupertino_icons: ^1.0.8
+  change_app_package_name: ^1.5.0
+  
+  # مواردی که کامنت کرده بودید را اینجا هم نگه‌داشتم تا در صورت نیاز فعال کنید
+  #process_run: ^0.12.2
+  #vector_math: ^2.1.4
   #usb_serial: ^0.2.5
   #permission_handler: ^10.4.0
   #flutter_nearby_connections: ^1.0.0
   #file_picker: ^5.2.3
-  tapsell_plus: ^2.3.2
   #shared_preferences: ^2.2.2
   #device_info_plus: ^10.1.0
   #path_provider: ^2.0.0
-  cupertino_icons: ^1.0.8
-  change_app_package_name: ^1.5.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 flutter:
   uses-material-design: true
+
