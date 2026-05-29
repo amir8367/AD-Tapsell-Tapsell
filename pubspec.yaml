@@ -7,6 +7,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    camera: ^0.10.5+5
+  
+  # پکیج افکت شیشه مایع (طبق درخواست شما)
+  liquid_glass_render: ^1.0.0
   flutter_animate: ^4.0.0
   #process_run: ^0.12.2
   #vector_math: ^2.1.4
